@@ -8,6 +8,9 @@
     ],
     "extra": {
         "laravel": {
+            "branch-alias": {
+                "dev-main": "1.x-dev"
+            },
             "providers": [
                 "OznerOmali\\LaravelToI18nextLangParser\\Providers\\LaravelToI18nextLangParserServiceProvider"
             ]
