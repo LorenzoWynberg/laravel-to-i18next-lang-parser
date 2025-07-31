@@ -7,6 +7,9 @@
         { "name": "Lorenzo Wynberg", "email": "dev.wynberg@gmail.com" }
     ],
     "extra": {
+        "branch-alias": {
+            "dev-main": "1.0.x-dev"
+        },
         "laravel": {
             "providers": [
                 "OznerOmali\\LaravelToI18nextLangParser\\Providers\\LaravelToI18nextLangParserServiceProvider"
@@ -39,6 +42,7 @@
             "Tests\\": "tests/"
         }
     },
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
         "sort-packages": true,
