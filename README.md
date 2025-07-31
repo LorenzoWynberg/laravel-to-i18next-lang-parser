@@ -74,9 +74,7 @@ Contributions, issues and feature requests are welcome.
 Feel free to check issues page.
 ```
 
-## 📝 License
+## 🔑 License
 ```
-🔑 License
-
 The MIT License (MIT). See LICENSE for details.
 ```
