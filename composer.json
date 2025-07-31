@@ -14,11 +14,11 @@
         }
     },
     "require": {
-        "php": "^8.4.0"
+        "php": "^8.4.0",
+        "laravel/laravel": "^12.2"
     },
     "require-dev": {
         "larastan/larastan": "^3.6",
-        "laravel/laravel": "^12.2",
         "laravel/pint": "^1.22.1",
         "orchestra/testbench": "^10.4",
         "peckphp/peck": "^0.1.3",
