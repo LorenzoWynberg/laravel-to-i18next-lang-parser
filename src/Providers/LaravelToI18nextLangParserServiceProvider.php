@@ -16,8 +16,5 @@ class LaravelToI18nextLangParserServiceProvider extends ServiceProvider
         }
     }
 
-    public function register(): void
-    {
-        // no bindings needed
-    }
+    public function register(): void {}
 }
