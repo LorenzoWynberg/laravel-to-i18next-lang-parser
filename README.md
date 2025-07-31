@@ -5,7 +5,7 @@ Transform your Laravel PHP language files into JSON files ready for [i18next](ht
 ---
 
 ## 🎬 Features
-
+```
 - Reads every `lang/{locale}/*.php` file
 - Parses Laravel’s `trans_choice` plural syntax (`{0}|{1}|[2,*]`)
 - Converts `:placeholder`, `:Placeholder`, `:PLACEHOLDER` into i18next interpolations:
@@ -14,6 +14,7 @@ Transform your Laravel PHP language files into JSON files ready for [i18next](ht
     - `:FOO` → `{{foo, uppercase}}`
 - Writes to `public/locales/{locale}/{group}.json`
 - Artisan command: `lang:parse-to-i18Next {locale?}`
+```
 
 ---
 
