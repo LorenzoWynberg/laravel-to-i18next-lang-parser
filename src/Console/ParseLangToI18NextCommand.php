@@ -38,6 +38,7 @@ class ParseLangToI18NextCommand extends Command
         $allLocales = collect($dirs)
             ->map(fn (string $dir): string => basename($dir));
 
+        /** @var ?string $requested */
         $requested = $this->argument('locale');
 
         if ($requested) {
