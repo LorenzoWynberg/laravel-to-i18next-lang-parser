@@ -17,7 +17,7 @@ This package parses your <a href="https://laravel.com/docs/12.x/localization" ta
     - A unique hash for each locale’s translation files
     - A `last_updated` timestamp
     - Useful for cache invalidation and detecting translation updates
-- Artisan command: `lang:parse-to-i18Next {locale?}`
+- Artisan command: `lang:to-i18next {locale?}`
 ```
 
 ---
@@ -32,9 +32,9 @@ composer require ozner-omali/laravel-to-i18next-lang-parser
 ## 🔧 Usage
 ```
 1. Export all locales
-    php artisan lang:parse-to-i18Next
+    php artisan lang:to-i18next
 2. Export a specific locale
-    php artisan lang:parse-to-i18Next es
+    php artisan lang:to-i18next es
 ```
 
 This will generate: \
