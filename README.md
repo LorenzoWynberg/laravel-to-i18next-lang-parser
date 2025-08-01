@@ -60,7 +60,7 @@ return [
 ];
 ```
 ### Generated i18next JSON:
-```php
+<pre>
 // resources/locales/en/messages.json
 {
     "success": {
@@ -91,7 +91,7 @@ return [
     "order_one": "order",
     "order_other": "orders"
 }
-```
+</pre>
 
 ---
 
