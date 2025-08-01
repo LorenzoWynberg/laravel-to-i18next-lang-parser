@@ -12,7 +12,11 @@ This package parses your <a href="https://laravel.com/docs/12.x/localization" ta
     - `:foo` → `{{foo}}`
     - `:Foo` → `{{foo, capitalize}}`
     - `:FOO` → `{{foo, uppercase}}`
-- Writes to `public/locales/{locale}/{key}.json`
+- Writes to `public/locales/{locale}/*.json`
+- Generates a `public/locales/versions.json` file with:
+    - A unique hash for each locale’s translation files
+    - A `last_updated` timestamp
+    - Useful for cache invalidation and detecting translation updates
 - Artisan command: `lang:parse-to-i18Next {locale?}`
 ```
 
@@ -28,13 +32,28 @@ composer require ozner-omali/laravel-to-i18next-lang-parser
 ## 🔧 Usage
 ```
 1. Export all locales
-    php artisan lang:parse-to-i18Next 
+    php artisan lang:parse-to-i18Next
 2. Export a specific locale
     php artisan lang:parse-to-i18Next es
 ```
 
-This will generate JSON files under:
-/public/locales/{locale}/{key}.json
+This will generate: \
+• Translation files under: /public/locales/{locale}/*.json \
+• A version tracking file under: /public/locales/versions.json
+
+### Example versions.json file
+```json
+{
+    "en": {
+        "hash": "a1b2c3d4e5f6g7h8i9j0",
+        "last_updated": "2023-10-01T12:00:00Z"
+    },
+    "es": {
+        "hash": "0j9i8h7g6f5e4d3c2b1a",
+        "last_updated": "2023-10-01T12:00:00Z"
+    }
+}
+```
 
 ### Example Laravel Translations:
 // resources/lang/en/messages.php
@@ -163,6 +182,7 @@ The parser:
      • :key → {{key}}
      • :Key → {{key, capitalize}}
      • :KEY → {{key, uppercase}}
+  • Adds versions.json for change detection and frontend cache management.
 </pre>
 
 ---
