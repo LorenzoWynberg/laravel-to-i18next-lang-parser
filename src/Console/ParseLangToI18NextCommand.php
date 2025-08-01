@@ -4,6 +4,7 @@ namespace OznerOmali\LaravelToI18nextLangParser\Console;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\File;
+use OznerOmali\LaravelToI18nextLangParser\Support\VersionHandler;
 use Throwable;
 
 class ParseLangToI18NextCommand extends Command
@@ -22,6 +23,17 @@ class ParseLangToI18NextCommand extends Command
      */
     protected $description = 'Parse Laravel language files into i18next-compatible JSON';
 
+    protected VersionHandler $versionHandler;
+
+    public function __construct(VersionHandler $versionHandler)
+    {
+        parent::__construct();
+        $this->versionHandler = $versionHandler;
+    }
+
+    /**
+     * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
+     */
     public function handle(): int
     {
         $langPath = lang_path();
@@ -55,6 +67,7 @@ class ParseLangToI18NextCommand extends Command
         foreach ($locales as $locale) {
             $this->info("→ Exporting locale: $locale");
             $files = File::allFiles("$langPath/$locale");
+
             foreach ($files as $file) {
                 // Get the relative path e.g. 'validation.php' or 'nested/foo.php'
                 $relPath = $file->getRelativePathname();
@@ -65,8 +78,9 @@ class ParseLangToI18NextCommand extends Command
                 // Export the file
                 $this->exportFile($locale, $key, $file->getPathname());
             }
+            // ✅ Update version
+            $this->versionHandler->update($locale);
         }
-
         $this->info('✅ All translations exported!');
 
         return 0;
