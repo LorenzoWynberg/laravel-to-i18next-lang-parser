@@ -14,7 +14,7 @@ class ParseLangToI18NextCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'lang:parse-to-i18Next {locale?}';
+    protected $signature = 'lang:to-i18next {locale?}';
 
     /**
      * The console command description.
