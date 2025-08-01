@@ -7,9 +7,6 @@
         { "name": "Lorenzo Wynberg", "email": "dev.wynberg@gmail.com" }
     ],
     "extra": {
-        "branch-alias": {
-            "dev-main": "1.x-dev"
-        },
         "laravel": {
             "providers": [
                 "OznerOmali\\LaravelToI18nextLangParser\\Providers\\LaravelToI18nextLangParserServiceProvider"
