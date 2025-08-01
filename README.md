@@ -34,19 +34,19 @@ composer require ozner-omali/laravel-to-i18next-lang-parser
 ```
 
 This will generate JSON files under:
-<br>
 /public/locales/{locale}/{key}.json
 
 ### Example Laravel Translations:
-```php
 // resources/lang/en/messages.php
+```php
 return [
     'success' => [
         'created' => '{0} No :resources created.|{1} :Resource created successfully.|[2,*] :Resources created successfully.'
     ],
 ];
-
+```
 // resources/lang/en/models.php
+```php
 return [
     'catalog' => 'catalog|catalogs',
     'element' => 'catalog element|catalog elements',
@@ -60,8 +60,8 @@ return [
 ];
 ```
 ### Generated i18next JSON:
-<pre>
 // resources/locales/en/messages.json
+```json
 {
     "success": {
         "created_zero": "No {{resources, capitalize}} created.",
@@ -69,8 +69,9 @@ return [
         "created_other": "{{resources, capitalize}} created successfully."
     }
 }
-
+```
 // resources/lang/en/models.json
+```json
 {
     "catalog_one": "catalog",
     "catalog_other": "catalogs",
@@ -91,7 +92,7 @@ return [
     "order_one": "order",
     "order_other": "orders"
 }
-</pre>
+```
 
 ---
 
