@@ -116,25 +116,37 @@ i18next
     });
 ```
 Then in your code, you can use the translations like this:
-```javascript 
+```javascript
+/** 
+ * We pass in the count and resource names to handle pluralization
+ * We pass the singular and plural forms of the resource
+ * to handle dynamic translations, i18next will automatically 
+ * choose the correct form based on the count.
+ */
+
 // 0 items
+let count = 0;
 i18next.t('success.created', {
-    count: 0,
+    count: count,
+    resource: i18next.t('models.user_one'),
     resources: i18next.t('models.user_other')
 });
 // → "No users created."
 
+
 // 1 item
+count = 1
 i18next.t('success.created', {
-    count: 1,
+    count: count,
     resource: i18next.t('models.user_one'),
     resources: i18next.t('models.user_other')
 });
 // → "User created successfully."
 
 // Multiple items
+count = 5;
 i18next.t('success.created', {
-    count: 5,
+    count: count,
     resource: i18next.t('models.user_one'),
     resources: i18next.t('models.user_other')
 });
