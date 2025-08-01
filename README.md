@@ -1,6 +1,6 @@
 # Laravel → i18next Lang Parser
 
-This package parses your [Laravel translation](https://laravel.com/docs/12.x/localization) files into [i18next](https://www.i18next.com/)-compatible JSON, converting plural forms and placeholders into a format ready for dynamic translation usage in the frontend.
+This package parses your <a href="https://laravel.com/docs/12.x/localization" target="_blank" rel="noopener noreferrer">Laravel translation</a> files into <a href="https://www.i18next.com/" target="_blank" rel="noopener noreferrer">i18next</a>-compatible JSON, converting plural forms and placeholders into a format ready for dynamic translation usage in the frontend.
 
 ---
 
@@ -169,24 +169,26 @@ The parser:
 
 ## 📖 Changelog
 <pre>
-See <a href="https://github.com/LorenzoWynberg/laravel-to-i18next-lang-parser/blob/main/CHANGELOG.md" target="_blank">CHANGELOG.md</a> for release notes and breaking changes.
+See <a href="https://github.com/LorenzoWynberg/laravel-to-i18next-lang-parser/blob/main/CHANGELOG.md" target="_blank" rel="noopener noreferrer">CHANGELOG.md</a> for release notes and breaking changes.
 </pre>
 
 ## 🤝 Contributing
 <pre>
 Contributions, issues, and feature requests are welcome!
 
-🔗 <a href="https://github.com/LorenzoWynberg/laravel-to-i18next-lang-parser/issues" target="_blank">Report Issues</a>
-🔗 <a href="https://github.com/LorenzoWynberg/laravel-to-i18next-lang-parser/pulls" target="_blank">Submit Pull Requests</a>
+🔗 <a href="https://github.com/LorenzoWynberg/laravel-to-i18next-lang-parser/issues" target="_blank" rel="noopener noreferrer">Report Issues</a>
+🔗 <a href="https://github.com/LorenzoWynberg/laravel-to-i18next-lang-parser/pulls" target="_blank" rel="noopener noreferrer">Submit Pull Requests</a>
 </pre>
 
 ## 🔑 License
 <pre>
-🔑 <a href="https://raw.githubusercontent.com/LorenzoWynberg/laravel-to-i18next-lang-parser/main/LICENSE.md" target="_blank">MIT License</a> © Lorenzo Wynberg / Ozner Omali
+🔑 <a href="https://raw.githubusercontent.com/LorenzoWynberg/laravel-to-i18next-lang-parser/main/LICENSE.md" target="_blank" rel="noopener noreferrer">MIT License</a> © Lorenzo Wynberg / Ozner Omali
 </pre>
 
 ## 🎵 Like my code? You'll love my music!
 
-- [Apple Music](https://music.apple.com/us/album/the-kitty-cat-crew/1796753922)
-- [Spotify](https://open.spotify.com/album/0uTRS5Z5Qebgi7BavwGlpm)
+<ul>
+  <li><a href="https://music.apple.com/us/album/the-kitty-cat-crew/1796753922" target="_blank" rel="noopener noreferrer">Apple Music</a></li>
+  <li><a href="https://open.spotify.com/album/0uTRS5Z5Qebgi7BavwGlpm" target="_blank" rel="noopener noreferrer">Spotify</a></li>
+</ul>
 
