@@ -173,3 +173,8 @@ Contributions, issues, and feature requests are welcome!
 🔑 <a href="https://raw.githubusercontent.com/LorenzoWynberg/laravel-to-i18next-lang-parser/main/LICENSE.md" target="_blank">MIT License</a> © Lorenzo Wynberg / Ozner Omali
 </pre>
 
+## 🎵 Like my code? You'll love my music!
+
+- [Apple Music](https://music.apple.com/us/album/the-kitty-cat-crew/1796753922)
+- [Spotify](https://open.spotify.com/album/0uTRS5Z5Qebgi7BavwGlpm)
+
