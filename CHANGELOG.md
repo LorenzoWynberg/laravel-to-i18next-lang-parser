@@ -4,6 +4,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [2.0.0] - 2025-08-01
+### Changed
+- **Breaking:** Renamed Artisan command from `lang:parse-to-i18Next` to `lang:to-i18next` for improved consistency and readability.
+
+### Migration Notes
+Replace any usage of:
+```bash
+  php artisan lang:parse-to-i18Next
+```
+with:
+```bash
+  php artisan lang:to-i18next
+```
+
 ## [1.1.0] - 2025-08-01
 ### Added
 - **Version tracking system:**
